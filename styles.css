@@ -1,1 +1,119 @@
 /* your code here */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: Arial, sans-serif;
+}
+
+footer {
+  background: #111;
+  color: #fff;
+  width: 100%;
+}
+
+footer .content {
+  max-width: 1300px;
+  margin: auto;
+  padding: 40px 20px;
+}
+
+.top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.logo-details .logo_name {
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.media-icons a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  margin: 0 5px;
+  background: #222;
+  color: #fff;
+  line-height: 40px;
+  text-align: center;
+  border-radius: 50%;
+  transition: all 0.3s ease;
+}
+.media-icons a:hover {
+  background: red;
+}
+
+.link-boxes {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.link-boxes .box {
+  width: 20%;
+  list-style: none;
+}
+
+.link-boxes .box li {
+  margin: 8px 0;
+}
+
+.link-boxes .box li.link_name {
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-decoration: underline;
+}
+
+.link-boxes .box a {
+  color: #bbb;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+.link-boxes .box a:hover {
+  color: #fff;
+}
+
+.bottom-details {
+  background: #222;
+  padding: 15px 20px;
+}
+
+.bottom-details .bottom_text {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  font-size: 14px;
+}
+
+.bottom-details a {
+  color: #bbb;
+  text-decoration: none;
+}
+.bottom-details a:hover {
+  color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .link-boxes {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .link-boxes .box {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .bottom-details .bottom_text {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+}
+
