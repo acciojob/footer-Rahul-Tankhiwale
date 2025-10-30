@@ -123,3 +123,39 @@ body {
     padding: 15px 20px;
   }
 }
+
+/* make the social icons a flex row so Cypress sees display: flex */
+.media-icons {
+  display: flex;        /* required by the test */
+  gap: 12px;            /* spacing between icons */
+  align-items: center;
+  justify-content: flex-start;
+}
+
+/* keep anchor presentation but ensure they are inline-flex for consistent sizing */
+.media-icons a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  border-radius: 6px;
+  color: #fff;
+  text-decoration: none;
+  transition: transform 0.12s ease, background 0.12s ease;
+}
+
+/* hover affordance */
+.media-icons a:hover {
+  transform: translateY(-2px);
+  color: #fff;
+  background: rgba(255,255,255,0.06);
+}
+
+@media (max-width: 768px) {
+  .media-icons {
+    justify-content: center;
+    margin-bottom: 16px;
+  }
+}
+
